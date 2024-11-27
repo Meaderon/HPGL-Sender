@@ -73,7 +73,7 @@ Install Dependencies
 
 Run the Application
 
-    python hpgl_plotter_app.py
+    python hpgl_sender.py
 
 Usage
 
