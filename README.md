@@ -1,8 +1,10 @@
 HPGL Plotter Sender
 
-(Replace with an actual screenshot if available)
+![Screenshot 2024-11-27 141724](https://github.com/user-attachments/assets/19e70523-94cf-4ab3-beba-e39d6f4e9e38)
 
-HPGL Plotter Sender is a user-friendly Python application designed to send HPGL (Hewlett-Packard Graphics Language) commands directly to plotters via a serial connection. Whether you're working with traditional pen plotters or modern CNC machines, this tool simplifies the process of transferring and visualizing your HPGL files.
+
+HPGL Plotter Sender is a user-friendly Python application designed to send HPGL (Hewlett-Packard Graphics Language) commands directly to plotters via a serial connection. 
+Whether you're working with traditional pen plotters or modern CNC machines, this tool simplifies the process of transferring and visualizing your HPGL files.
 Table of Contents
 
     Features
@@ -29,7 +31,7 @@ Installation
 
     Clone the Repository
 
-git clone https://github.com/yourusername/hpgl-plotter-sender.git
+git clone https://github.com/meaderon/HPGL-sender.git
 cd hpgl-plotter-sender
 
 Create a Virtual Environment (Optional but Recommended)
@@ -39,9 +41,41 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 Install Dependencies
 
- you can install dependencies manually:
+1. Python 3.6+
 
-pip install pyserial
+    Description: The application is built using Python, and it's crucial to have Python version 3.6 or higher.
+    Installation: Download Python
+
+2. Tkinter
+
+    Description: Tkinter is Python's standard GUI library and is used extensively in your application for creating the user interface.
+    Availability:
+        Windows: Typically included with Python installations.
+        macOS: Included with Python installations.
+        Linux: May require separate installation.
+    Installation on Linux:
+
+    sudo apt-get update
+    sudo apt-get install python3-tk
+
+    Note: If Tkinter is not installed, users may encounter import errors. It's good practice to mention this in your README.
+
+3. PySerial
+
+    Description: PySerial is a Python library that encapsulates the access for the serial port. It's essential for serial communication with the plotter.
+    Installation:
+
+    pip install pyserial
+
+    Version Recommendation: While your code doesn't specify a version, it's advisable to use a stable version. You can specify it in your requirements.txt (e.g., pyserial>=3.4).
+
+4. Standard Libraries
+
+    Description: The following Python standard libraries are used and do not require separate installation:
+        threading
+        re
+        time
+        tkinter.ttk (part of Tkinter)
 
 Run the Application
 
