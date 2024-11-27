@@ -32,12 +32,7 @@ Installation
     Clone the Repository
 
 git clone https://github.com/meaderon/HPGL-sender.git
-cd hpgl-plotter-sender
 
-Create a Virtual Environment (Optional but Recommended)
-
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 Install Dependencies
 
@@ -58,8 +53,7 @@ Install Dependencies
     sudo apt-get update
     sudo apt-get install python3-tk
 
-    Note: If Tkinter is not installed, users may encounter import errors. It's good practice to mention this in your README.
-
+    Note: If Tkinter is not installed, users may encounter import errors. 
 3. PySerial
 
     Description: PySerial is a Python library that encapsulates the access for the serial port. It's essential for serial communication with the plotter.
